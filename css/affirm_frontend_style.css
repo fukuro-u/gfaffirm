@@ -1,0 +1,28 @@
+#gform_affirm_smart_payment_buttons {
+    width: 250px;
+    font-size: 18px;
+    /* height: 60px; */
+    background-color: #4a4af4 !important;
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+    padding: 20px;
+    border-radius: 16px;
+    border: none;
+    font-weight: 700;
+    text-align: center;
+    background: url(../images/affirm.png) no-repeat 5% center;
+    background-size: 35px;
+    cursor: pointer;
+}
+
+.canshowbuttonstatus-visible {
+    visibility: visible !important;
+    position: static !important;
+    left: 0px !important;
+}
+
+.canshowbuttonstatus-hidden {
+    visibility: hidden !important;
+    position: absolute !important;
+    left: -9999em !important;
+}
