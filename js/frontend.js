@@ -132,8 +132,9 @@ window.GFAFFIRM = null;
                 if (!self.feedActivated || $('#gform_save_' + self.formId).val() === '1' || $(self.form).data('gfaffirmsubmitting') || window[self.totalName] <= 0 || self.isGoPrevPage() || 'undefined' !== typeof gformIsRecaptchaPending && gformIsRecaptchaPending($(self.form))) {
                     return true;
                 }
-                gformAddSpinner(self.formId);
                 event.preventDefault();
+                $(self.form).addClass("no-event");
+                gformAddSpinner(self.formId);
                 if (!$(self.form).data('gfaffirmsubmitting')) {
                     $(self.form).data('gfaffirmsubmitting', true);
                 }
@@ -265,6 +266,7 @@ window.GFAFFIRM = null;
                 error: function(jqXHR, exception) {
                     console.log(jqXHR + "\n" + exception);
                     if ($(self.form).data('gfaffirmsubmitting')) {
+                        $(self.form).removeClass("no-event");
                         self.affirmInit();
                         $(self.form).data('gfaffirmsubmitting', false);
                         self.hideFormSpinner();
@@ -278,6 +280,7 @@ window.GFAFFIRM = null;
                 if (!$(e.target).hasClass('affirm-sandbox-container'))
                     return;
                 if ($(self.form).data('gfaffirmsubmitting')) {
+                    $(self.form).removeClass("no-event");
                     self.affirmInit();
                     $(self.form).data('gfaffirmsubmitting', false);
                     self.hideFormSpinner();
