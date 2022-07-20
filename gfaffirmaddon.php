@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: GravityForms Affirm payment
-Plugin URI: https://gravityextra.com
+Plugin Name: GravityForms Affirm Add-on
+Plugin URI: https://efe.com.vn/
 Description: GravityForms + Affirm payment
 Version: 1.0
-Author: GravityExtra
-Author URI: https://gravityextra.com
+Author: EFE Technology
+Author URI: https://efe.com.vn/
 
 ------------------------------------------------------------------------
 Copyright 2012-2016 Rocketgenius Inc.

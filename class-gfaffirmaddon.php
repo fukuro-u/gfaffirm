@@ -8,8 +8,8 @@ class GFAffirmAddOn extends GFPaymentAddOn {
 	protected $_slug = 'gfaffirm';
 	protected $_path = 'gfaffirm/gfaffirmaddon.php';
 	protected $_full_path = __FILE__;
-	protected $_title = 'GravityForms Affirm Checkout';
-	protected $_short_title = 'Affirm Checkout';
+	protected $_title = 'GravityForms Affirm Add-on';
+	protected $_short_title = 'Affirm';
 	protected $_supports_callbacks = true;
 	protected $_supports_frontend_feeds = true;
 	private $sandbox_js = "https://cdn1-sandbox.affirm.com/js/v2/affirm.js";
@@ -782,7 +782,7 @@ class GFAffirmAddOn extends GFPaymentAddOn {
 						'label'   => esc_html__( 'PUBLIC API KEY', 'gfaffirm' ),
 						'type'    => 'text',
 						'name'    => 'public_key',
-						'tooltip' => 'Click to <a href="https://docs.affirm.com/developers/docs/"> here</a> to redirect to documents',
+						'tooltip' => 'Please enter your Public API key here.',
 						'class'   => 'client client_id',
 					),
 					array(
